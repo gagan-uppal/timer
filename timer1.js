@@ -7,8 +7,13 @@ const inputArgs = process.argv
   .slice(2)
   
   console.log(inputArgs);
+  
 inputArgs.forEach((time) => {
-  setTimeout(() => {
-    process.stdout.write('\x07');
-  }, time );
+  //if(inputArgs[time] >= 0 && inputArgs[time] !== NaN) {
+
+    setTimeout(() => {
+      process.stdout.write('\x07');
+    }, time );
+  //}
+  
 });
